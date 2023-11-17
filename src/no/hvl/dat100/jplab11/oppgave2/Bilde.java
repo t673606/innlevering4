@@ -6,33 +6,49 @@ public class Bilde extends Tekst {
 
 	// TODO - objekt variable
 	
+	private String bildeUrl;
+	
+	public Bilde() {
+	
+	super();
+	this.bildeUrl = "";
+	
+	}
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+		super(id, bruker, dato, tekst);
+		this.bildeUrl = url;
+		
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+		super(id, bruker, dato, likes, tekst);
+		this.bildeUrl = url;
 	}
 	
 	public String getUrl() {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		return bildeUrl;
+
 
 	}
 
 	public void setUrl(String url) {
-		throw new UnsupportedOperationException(TODO.method());
+		this.bildeUrl = url;
 	}
 
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method ());
+		
+		return "BILDE\n" + super.toString() + "\n" + bildeUrl + "\n";
+		
+
 
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return "";
 				
 	}
 }
